@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login Sample</string>
+    <string name="register">Регистрация</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Пароль</string>
+    <string name="signup_login_hint">Уже есть аккаунт? Войдите</string>
+    <string name="login_signup_hint">Ещё нет аккаунта? Зарегистрируйтесь</string>
+    <string name="title_post_list">Posts</string>
+    <string name="title_post_detail">Post Detail</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsnipp.loginsamples">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Социальная сеть"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".views.feed.PostListActivity"
+            android:label="Лента постов"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".views.chats.MessageListActivity"
+            android:label="Сообщения"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".views.chats.ChatListActivity"
+            android:label="Мои диалоги"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".views.chats.StartChatActivity"
+            android:label="@string/title_post_list"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".views.feed.AddPostActivity"
+            android:label="Add Post"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".views.feed.PostDetailActivity"
+            android:label="@string/title_post_detail"
+            android:parentActivityName=".views.feed.PostListActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appsnipp.loginsamples.views.feed.PostListActivity" />
+        </activity>
+        <activity android:name=".views.auth.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.auth.RegisterActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:weightSum="12"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/post_detail"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context=".views.feed.PostDetailFragment"
+        tools:text="Загрузка..." />
+
+    <TextView
+        android:id="@+id/post_author"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/primaryTextColor"
+        android:padding="16dp"
+        android:textColor="#E40E0E"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:context=".views.feed.PostDetailFragment"
+        tools:text="Загрузка..." />
+
+    <TextView
+        android:id="@+id/post_date"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/primaryTextColor"
+        android:padding="16dp"
+        android:textColor="#E40E0E"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:context=".views.feed.PostDetailFragment"
+        tools:text="Загрузка..." />
+
+    <TextView
+        android:id="@+id/post_likes"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/primaryTextColor"
+        android:padding="16dp"
+        android:textColor="#E40E0E"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:context=".views.feed.PostDetailFragment"
+        tools:text="Загрузка..." />
+</LinearLayout>
